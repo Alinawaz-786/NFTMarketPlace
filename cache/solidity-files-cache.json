@@ -1,43 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/ali/Downloads/MarketPlace/contracts/Greeter.sol": {
-      "lastModificationDate": 1644864590479,
-      "contentHash": "54c28c84e5277b35b8c8329ce9755dae",
-      "sourceName": "contracts/Greeter.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Greeter"
-      ]
-    },
     "/home/ali/Downloads/MarketPlace/node_modules/hardhat/console.sol": {
       "lastModificationDate": 1644864736387,
       "contentHash": "cc4777addd464ea56fa35b1c45df0591",
@@ -71,6 +34,632 @@
       ],
       "artifacts": [
         "console"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/Auction.sol": {
+      "lastModificationDate": 1645027264736,
+      "contentHash": "81ec14704f5297adfc49976b6acce1a9",
+      "sourceName": "contracts/Auction.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ExchangeCore.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "Exchange"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/ExchangeCore.sol": {
+      "lastModificationDate": 1645029590376,
+      "contentHash": "a61ec8e5491d7f24d030d4877c7f9a30",
+      "sourceName": "contracts/ExchangeCore.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20Basic.sol",
+        "./ReentrancyGuarded.sol",
+        "./Ownable.sol",
+        "./ProxyRegistry.sol",
+        "./TokenTransferProxy.sol",
+        "./library/SaleKindInterface.sol",
+        "./library/ArrayUtils.sol",
+        "./AuthenticatedProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "ExchangeCore"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/ERC20Basic.sol": {
+      "lastModificationDate": 1645027041228,
+      "contentHash": "49c0e184d1cfdbf0e0e70d6ecf3c7af8",
+      "sourceName": "contracts/ERC20Basic.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "ERC20",
+        "ERC20Basic"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/ReentrancyGuarded.sol": {
+      "lastModificationDate": 1645025366432,
+      "contentHash": "3845c06f3bdfa40dd75e78d0ef71f804",
+      "sourceName": "contracts/ReentrancyGuarded.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "ReentrancyGuarded"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/Ownable.sol": {
+      "lastModificationDate": 1645025316548,
+      "contentHash": "67d7d9c2d888ead6b672a18c402386b5",
+      "sourceName": "contracts/Ownable.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/ProxyRegistry.sol": {
+      "lastModificationDate": 1645027937244,
+      "contentHash": "1e4c615fe3b6e99ecaf79360509f3dda",
+      "sourceName": "contracts/ProxyRegistry.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol",
+        "./OwnableDelegateProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "ProxyRegistry"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/TokenTransferProxy.sol": {
+      "lastModificationDate": 1645028147588,
+      "contentHash": "27db6578f0401c33d55c265d17b85565",
+      "sourceName": "contracts/TokenTransferProxy.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ProxyRegistry.sol",
+        "./ERC20Basic.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "TokenTransferProxy"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/library/SaleKindInterface.sol": {
+      "lastModificationDate": 1645029105540,
+      "contentHash": "f31599303cca97dad10139890bbce749",
+      "sourceName": "contracts/library/SaleKindInterface.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "SaleKindInterface"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/library/ArrayUtils.sol": {
+      "lastModificationDate": 1645027095628,
+      "contentHash": "0c161da09c6a1b16a9247215d45723a3",
+      "sourceName": "contracts/library/ArrayUtils.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "ArrayUtils"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/AuthenticatedProxy.sol": {
+      "lastModificationDate": 1645029498740,
+      "contentHash": "ac7432268178f52768b3383aaf0cd582",
+      "sourceName": "contracts/AuthenticatedProxy.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnedUpgradeabilityStorage.sol",
+        "./TokenRecipient.sol",
+        "./ProxyRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "AuthenticatedProxy"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/OwnableDelegateProxy.sol": {
+      "lastModificationDate": 1645027932060,
+      "contentHash": "5aa6c701af42386fa4c5dbae8016a8b9",
+      "sourceName": "contracts/OwnableDelegateProxy.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnedUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "OwnableDelegateProxy"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/OwnedUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1645027926836,
+      "contentHash": "da1a674cf4c6f0d3f54ca6b01926bcfa",
+      "sourceName": "contracts/OwnedUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnedUpgradeabilityStorage.sol",
+        "./Proxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "OwnedUpgradeabilityProxy"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/OwnedUpgradeabilityStorage.sol": {
+      "lastModificationDate": 1645027740076,
+      "contentHash": "fd09e58c6fa49077e11e1df35d0a5b17",
+      "sourceName": "contracts/OwnedUpgradeabilityStorage.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "OwnedUpgradeabilityStorage"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/Proxy.sol": {
+      "lastModificationDate": 1645027786584,
+      "contentHash": "21ed3e72947719a2ba0df28321636dd8",
+      "sourceName": "contracts/Proxy.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/library/SafeMath.sol": {
+      "lastModificationDate": 1645029024416,
+      "contentHash": "b7849db51f60a9530304bd1ca9199a6f",
+      "sourceName": "contracts/library/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/TokenRecipient.sol": {
+      "lastModificationDate": 1645029434736,
+      "contentHash": "98cb33a058ea10fc754f7fd3250fae11",
+      "sourceName": "contracts/TokenRecipient.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20Basic.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "TokenRecipient"
+      ]
+    },
+    "/home/ali/Downloads/NFTMarketPlace/contracts/SafeMath.sol": {
+      "lastModificationDate": 1645025255400,
+      "contentHash": "b7849db51f60a9530304bd1ca9199a6f",
+      "sourceName": "contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.4.23",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.13"
+      ],
+      "artifacts": [
+        "SafeMath"
       ]
     }
   }
