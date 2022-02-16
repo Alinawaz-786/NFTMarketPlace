@@ -18,3 +18,14 @@ Address 0xa839d4b5a36265795eba6894651a8af3d0ae2e68
 
 All Above address are use WyvernExchange Contract Constructor 
 
+
+#Hardhat Version
+Compile
+npx hardhat compile
+Deploy
+npx hardhat run --network rinkeby scripts/deploy.js
+Clean Cache
+npx hardhat clean
+Verify contract and set address  
+npx hardhat verify --network rinkeby  "_set deploye Address"
+
